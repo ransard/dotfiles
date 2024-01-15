@@ -72,3 +72,6 @@ EOD
 
 # Disable the annoying line marks
 defaults write com.apple.Terminal ShowLineMarks -int 0
+
+# Use alt as Meta key
+/usr/libexec/PlistBuddy -c "set :Window\ Settings:Basic:useOptionAsMetaKey true" ~/Library/Preferences/com.apple.Terminal.plist

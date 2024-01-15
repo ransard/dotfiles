@@ -1,0 +1,36 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.smartRelativeLine": true,
+  "editor.formatOnSave": true,
+  "git.autofetch": true,
+  "svelte.enable-ts-plugin": true,
+  "git.suggestSmartCommit": false,
+  "vim.easymotion": true,
+  "vim.useCtrlKeys": false,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "vim.leader": "<space>",
+  "git.confirmSync": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "vim.statusBarColors.commandlineinprogress": ""
+}
