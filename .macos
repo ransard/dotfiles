@@ -75,3 +75,12 @@ defaults write com.apple.Terminal ShowLineMarks -int 0
 
 # Use alt as Meta key
 /usr/libexec/PlistBuddy -c "set :Window\ Settings:Basic:useOptionAsMetaKey true" ~/Library/Preferences/com.apple.Terminal.plist
+
+# Disables auto capitalization
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+# Disables "smart" dashes
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+# Disables automatic period substitutions
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+# Disables smart quotes 
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false

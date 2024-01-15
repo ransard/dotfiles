@@ -32,5 +32,6 @@
   "git.confirmSync": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "vim.statusBarColors.commandlineinprogress": ""
+  "vim.statusBarColors.commandlineinprogress": "",
+  "redhat.telemetry.enabled": true
 }

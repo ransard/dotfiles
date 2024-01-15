@@ -15,6 +15,7 @@ ms-vscode.azure-account
 Prisma.prisma
 svelte.svelte-vscode
 vscodevim.vim
+redhat.vscode-yaml
 )
 
 for i in ${pkglist[@]}; do
