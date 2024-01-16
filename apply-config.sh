@@ -34,17 +34,11 @@ print_error() {
 	exit 1
 }
 
-# test if at least one flag was specified
-if [ "$OPTIND" -eq 1 ]; then
-    print_error "No options specified."
-fi
-shift $(( OPTIND - 1 ))
 
 # commands and directories
 ln_cmd="ln -sf"
 config_dir="$HOME/.config"
 dot_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
-
 
 # flags to be set
 create_links=false
@@ -62,6 +56,12 @@ while getopts "aslpfnh" arg; do
         "?") print_error; exit 1 ;;
     esac
 done
+
+# test if at least one flag was specified
+if [ "$OPTIND" -eq 1 ]; then
+    print_error "No options specified."
+fi
+shift $(( OPTIND - 1 ))
 
 # setup neovim
 if [ "$setup_nvim" = true ]; then

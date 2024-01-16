@@ -1,3 +1,5 @@
+tap "homebrew/cask-fonts"
+
 brew "nvim"
 brew "tmux"
 brew "gnu-getopt"
@@ -11,3 +13,5 @@ cask "visual-studio-code"
 cask "spotify"
 cask "arc"
 cask "obsidian"
+cask "alacritty"
+cask "postman"
