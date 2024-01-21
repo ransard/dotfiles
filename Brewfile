@@ -2,9 +2,9 @@ tap "homebrew/cask-fonts"
 
 brew "nvim"
 brew "tmux"
-brew "gnu-getopt"
 brew "node"
 brew "azure-cli"
+brew "lazygit"
 
 cask "slack"
 # cask "google-drive"
