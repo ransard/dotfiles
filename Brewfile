@@ -9,6 +9,8 @@ brew "nvm"
 #brew "podman"
 brew "ripgrep"
 brew "fd"
+brew "python"
+brew "podman-compose"
 
 cask "slack"
 # cask "google-drive"
