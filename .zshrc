@@ -81,7 +81,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z)
+plugins=(git z zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -143,3 +143,21 @@ set -o extendedglob
 
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
+
+alias python=python3
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/berkm/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/berkm/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/berkm/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/berkm/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

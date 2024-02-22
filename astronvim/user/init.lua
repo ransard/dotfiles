@@ -8,6 +8,13 @@ return {
       "nvim-telescope/telescope.nvim",
       opts = { defaults = { file_ignore_patterns = { "node_modules/*", "build/*", "*.svg" } } },
     },
+    {
+      "nvim-treesitter/nvim-treesitter",
+      opts = {
+        ensure_installed = "svelte",
+        highlight = { enable = true}
+      }
+    }
   },
   mappings = {
     n = {
