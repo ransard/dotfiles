@@ -34,5 +34,8 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "vim.statusBarColors.commandlineinprogress": "",
   "redhat.telemetry.enabled": true,
-  "workbench.colorTheme": "Default Light+"
+  "workbench.colorTheme": "Default Light+",
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  }
 }
