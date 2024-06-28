@@ -2,7 +2,8 @@ return {
   plugins = {
     { "akinsho/toggleterm.nvim", opts = { direction = "horizontal" } },
     { "AstroNvim/astrocommunity", {
-          { import = "astrocommunity.colorscheme.nord-nvim" }
+          { import = "astrocommunity.colorscheme.catppuccin"},
+      { import = "astrocommunity.completion.copilot-lua-cmp"}
     }},
     {
       "nvim-telescope/telescope.nvim",
@@ -32,5 +33,5 @@ return {
       ["<Esc>"] = { "<C-\\><C-n>", desc = "escape terminal" },
     },
   },
-  colorscheme = "nord"
+  colorscheme = "catppuccin-macchiato"
 }

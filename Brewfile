@@ -11,6 +11,8 @@ brew "ripgrep"
 brew "fd"
 brew "python"
 brew "podman-compose"
+brew "gh"
+brew "sqlite"
 
 cask "slack"
 # cask "google-drive"
