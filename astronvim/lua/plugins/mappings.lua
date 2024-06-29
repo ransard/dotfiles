@@ -17,6 +17,10 @@ return {
             function() require("toggleterm").toggle(vim.v.count) end,
             desc = "toggle term",
           },
+          ["<CR>"] = {
+            function() require("flash").jump() end,
+            desc = "Flash",
+          },
         },
         t = {
           ["<Esc>"] = { "<C-\\><C-n>", desc = "escape terminal" },
