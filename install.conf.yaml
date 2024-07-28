@@ -5,14 +5,18 @@
 - clean: ['~']
 
 - link:
+    ~/.zshenv: { path: config/zsh/.zshenv, force: true }
+    ${XDG_CONFIG_HOME}/zsh: config/zsh
+    ${XDG_CONFIG_HOME}/nvim: astronvim
     ~/.tmux.conf: .tmux.conf
     ~/.vim: .vim
     ~/.vimrc: .vimrc
-    ~/.zshrc: .zshrc
 
 - create:
     - ~/downloads
     - ~/.vim/undo-history
 
 - shell:
+  - description: Set XDG environmental variables
+    command: source ./config/zsh/.zshenv
   - [git submodule update --init --recursive, Installing submodules]
