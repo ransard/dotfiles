@@ -1,6 +1,7 @@
 - defaults:
     link:
       relink: true
+      create: true
 
 - clean: ['~']
 
@@ -8,13 +9,14 @@
     ~/.zshenv: { path: config/zsh/.zshenv, force: true }
     ${XDG_CONFIG_HOME}/zsh: config/zsh
     ${XDG_CONFIG_HOME}/nvim: astronvim
-    ~/.tmux.conf: .tmux.conf
-    ~/.vim: .vim
-    ~/.vimrc: .vimrc
+    ${XDG_CONFIG_HOME}/tmux: .tmux.conf
+
+    ${XDG_DATA_HOME}/tmux/tpm: submodules/tpm
+    ${XDG_DATA_HOME}/tmux/plugins/tpm: submodules/tpm
 
 - create:
     - ~/downloads
-    - ~/.vim/undo-history
+    - ~/dev
 
 - shell:
   - description: Set XDG environmental variables

@@ -6,6 +6,8 @@ pacman_apps=(
 'tmux'
 'zsh'
 'lazygit'
+'nodejs'
+'npm'
 )
 
 # Colors
