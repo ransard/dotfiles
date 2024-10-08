@@ -10,4 +10,5 @@ return {
   { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
+  { import = "astrocommunity.motion.harpoon" },
 }

@@ -37,5 +37,6 @@
   "workbench.colorTheme": "Default Light+",
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp"
-  }
+  },
+  "github.copilot.editor.enableAutoCompletions": true
 }
