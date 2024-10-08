@@ -156,7 +156,7 @@ set -o extendedglob
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
 
-alias python=python3
+# alias python=python3
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -172,4 +172,11 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+#
+
+# Golang environment variables
+export GOROOT="$(brew --prefix golang)/libexec"
+# export GOROOT=/opt/homebrew/bin/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH:
 
