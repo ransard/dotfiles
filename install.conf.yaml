@@ -3,13 +3,13 @@
       relink: true
       create: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
     ~/.zshenv: { path: config/zsh/.zshenv, force: true }
     ${XDG_CONFIG_HOME}/zsh: config/zsh
     ${XDG_CONFIG_HOME}/nvim: astronvim
-    ${XDG_CONFIG_HOME}/tmux: .tmux.conf
+    ${XDG_CONFIG_HOME}/tmux: config/tmux
 
     ${XDG_DATA_HOME}/tmux/tpm: submodules/tpm
     ${XDG_DATA_HOME}/tmux/plugins/tpm: submodules/tpm
@@ -19,6 +19,6 @@
     - ~/dev
 
 - shell:
-  - description: Set XDG environmental variables
-    command: source ./config/zsh/.zshenv
-  - [git submodule update --init --recursive, Installing submodules]
+    - description: Set XDG environmental variables
+      command: source ./config/zsh/.zshenv
+    - [git submodule update --init --recursive, Installing submodules]

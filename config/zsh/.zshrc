@@ -8,7 +8,6 @@ utils_dir="${XDG_CONFIG_HOME}/utils"
 # Source all ZSH config files (if present)
 if [[ -d $zsh_dir ]]; then
   # Setup Antigen, and import plugins
-  echo "Going into zsh_dir"
   source ${zsh_dir}/antigen.zsh	
   source ${zsh_dir}/plugins.zsh	
 fi
@@ -174,9 +173,4 @@ unset __conda_setup
 # <<< conda initialize <<<
 #
 
-# Golang environment variables
-export GOROOT="$(brew --prefix golang)/libexec"
-# export GOROOT=/opt/homebrew/bin/go
-export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH:
-
+export PATH=/opt/homebrew/bin:$PATH
