@@ -29,4 +29,9 @@ function apply_preferences () {
   fi
 	}
 
-apply_preferences
+# Install / update Tmux plugins with TPM
+echo -e "${PURPLE}Installing TMUX Plugins${RESET}"
+chmod ug+x "${XDG_DATA_HOME}/tmux/tpm"
+sh "${TMUX_PLUGIN_MANAGER_PATH}/tpm/bin/install_plugins"
+sh "${XDG_DATA_HOME}/tmux/plugins/tpm/bin/install_plugins"
+# apply_preferences
