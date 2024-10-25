@@ -173,4 +173,6 @@ unset __conda_setup
 # <<< conda initialize <<<
 #
 
+compdef _zshz ${ZSHZ_CMD:-${_Z_CMD:-z}}
+
 export PATH=/opt/homebrew/bin:$PATH
