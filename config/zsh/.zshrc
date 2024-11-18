@@ -10,6 +10,7 @@ if [[ -d $zsh_dir ]]; then
   # Setup Antigen, and import plugins
   source ${zsh_dir}/antigen.zsh	
   source ${zsh_dir}/plugins.zsh	
+  source ${zsh_dir}/aliases/general.zsh
 fi
 
 [[ -f ~/.secrets ]] && source ~/.secrets
