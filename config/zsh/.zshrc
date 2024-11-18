@@ -11,6 +11,7 @@ if [[ -d $zsh_dir ]]; then
   source ${zsh_dir}/antigen.zsh	
   source ${zsh_dir}/plugins.zsh	
   source ${zsh_dir}/aliases/general.zsh
+  source ${zsh_dir}/aliases/tmux.zsh
 fi
 
 [[ -f ~/.secrets ]] && source ~/.secrets
