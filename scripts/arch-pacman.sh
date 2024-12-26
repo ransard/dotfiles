@@ -11,6 +11,9 @@ pacman_apps=(
 'openssh'
 'which'
 'gcc'
+'ripgrep'
+'fzf'
+'fd'
 )
 
 # Colors

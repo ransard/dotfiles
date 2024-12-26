@@ -223,6 +223,26 @@ function apply_preferences () {
       chsh -s $(which zsh) $USER
     fi
   fi
+
+  # Prompt user to update ZSH, Tmux and Vim plugins, then reload each
+  echo -e "\n${CYAN_B}Would you like to install / update ZSH, Tmux and Vim plugins? (y/N)${RESET}"
+  read -t $PROMPT_TIMEOUT -n 1 -r ans_cliplugins
+  if [[ $ans_cliplugins =~ ^[Yy]$ ]] || [[ $AUTO_YES = true ]] ; then
+    # Install / update vim plugins with Plug
+    echo -e "\n${PURPLE}Installing Vim Plugins${RESET}"
+    vim +PlugInstall +qall
+
+    # Install / update Tmux plugins with TPM
+    echo -e "${PURPLE}Installing TMUX Plugins${RESET}"
+    chmod ug+x "${XDG_DATA_HOME}/tmux/tpm"
+    sh "${TMUX_PLUGIN_MANAGER_PATH}/tpm/bin/install_plugins"
+    sh "${XDG_DATA_HOME}/tmux/plugins/tpm/bin/install_plugins"
+
+    # Install / update ZSH plugins with Antigen
+    echo -e "${PURPLE}Installing ZSH Plugins${RESET}"
+    /bin/zsh -i -c "antigen update && antigen-apply"
+  fi
+
 	}
 
 pre_setup_tasks   # Print start message, and check requirements are met
