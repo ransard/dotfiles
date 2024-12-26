@@ -1,4 +1,5 @@
 *.lock.json
 *-lock.json
+config/zsh/*.zwc
 .zsh_history
 .zcompdump
