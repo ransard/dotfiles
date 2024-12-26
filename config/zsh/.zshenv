@@ -11,3 +11,11 @@ export XDG_CACHE_HOME="${HOME}/.cache"
 
 export ZDOTDIR="${XDG_CONFIG_HOME}/zsh"
 export ADOTDIR="${XDG_CACHE_HOME}/zsh/antigen"
+export GIT_CONFIG="${XDG_CONFIG_HOME}/git/.gitconfig"
+export TMUX_PLUGIN_MANAGER_PATH="${XDG_DATA_HOME}/tmux/plugins"
+
+export ZDOTDIR="${XDG_CONFIG_HOME}/zsh"
+export ZLIB="${ZDOTDIR}/lib"
+
+
+

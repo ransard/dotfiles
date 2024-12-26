@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# https://github.com/Lissy93/dotfiles
 
 pacman_apps=(
 'neovim'
@@ -7,7 +6,11 @@ pacman_apps=(
 'zsh'
 'lazygit'
 'nodejs'
-'npm'
+'wget'
+'python-pip'
+'openssh'
+'which'
+'gcc'
 )
 
 # Colors
