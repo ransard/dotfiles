@@ -1,5 +1,0 @@
-return {
-  env = {
-    ENV = "development"
-  }
-}
